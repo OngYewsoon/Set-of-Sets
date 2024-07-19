@@ -1,4 +1,5 @@
 ﻿# Set of Sets
+Code for paper: [Jack and Masters of all Trades: One-Pass Learning Sets of Model Sets From Large Pre-Trained Models](https://arxiv.org/abs/2205.00671)
 
 ## Overview
 
