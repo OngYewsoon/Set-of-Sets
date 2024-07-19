@@ -9,7 +9,7 @@ This codebase allows you to perform experiments with the Set of Sets. It constit
 2) Multilingual Translation (M2M100-418M - Reported): https://www.statmt.org/wmt19/translation-task.html
 3) Beijing Air Quality Regression (Non-Timeseries, Feedforward Neural Network - Not Reported): https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data
 4) Beijing Air Quality Regression (Timeseries, LSTM - Reported)
-5) CIFAR-10
+5) CIFAR-10 
 6) MNIST
 
 The structure of the codebase is as follows:
@@ -161,3 +161,10 @@ temp.initialize(2048, 0.2, 0.99)
 The degree of constraint is problem and model dependent. Intuitively, larger models with greater degrees of overparametrization and larger binary masks allow for smaller lower bounds on size. In the Regression experiments, an LSTM of size 0.56 MB is sufficient to achieve good performance. Hence we constrain its size to be at least 20% of the original model. If the constraint is removed, many poorly performing models are generated. On the other hand, in the MNIST experiments, we use ResNet-18, which is extremely powerful relative to the dataset on which it is used. Hence, we constrain the candidate masks to between 0% and 10% of the original model size. In other words, this constraint is dependent upon how many parameters the model can afford to lose before it breaks down.
 
 This hyperparameter helps to focus the search, and can result in significant performance and efficiency gains.
+
+
+# Issues and FAQ
+
+> Coming soon!
+
+* Plese feel free to contact [@cschen](<cschen1205@gmail.com>) if you encounter issues on the project.
