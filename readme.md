@@ -13,7 +13,7 @@ This codebase allows you to perform experiments with the Set of Sets. It constit
 
 The structure of the codebase is as follows:
 ```
-SoS_Final_Code
+src
 │   results_analysis.ipynb # Jupyter notebook for plotting the results of all experiments
 │   run_all.py # Python subprocess file for executing all experiments in order. Hyperparameters
 | 			   # are changed here.
@@ -67,8 +67,21 @@ SoS_Final_Code
 
 Codebases for each experiment are identical except for choice of metric and loss function. Hence, once familiarized with the code for one experiment, familiarizing with the others should be straightforward. The code for the MNIST experiments is annotated and its functions and general flow are shared across all experiments. Please refer to the MNIST experiment for clarification.
 
+### Installation
+```bash
+# clone the repo
+git clone https://github.com/cschen1205/Set-of-Sets.git
+
+# Go to directory
+cd Set-of-Sets
+
+# create a new environment and activated it
+conda env create -f environment.yml
+conda activate SoS
+```
+
 ### If using provided data
-1) Open the .zip file containing all pre-prepared datasets. There should be four folders.
+1) Open the .src folder. There should be four folders.
 2) Place the contents of each folder in the corresponding /data/ folder in the main codebase.
 3) Open run_all.py. Modify hyperparameters and select experiments as desired. Hyperparameters are as follows:
 	* run_name = 'Test_Run' # Name of experiment - Folder containing results will be named this.
