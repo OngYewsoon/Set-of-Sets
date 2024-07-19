@@ -82,7 +82,7 @@ conda activate SoS
 ```
 
 ### If using provided data
-1) Open the .src folder. There should be four folders.
+1) Open the src folder. There should be four folders.
 2) Place the contents of each folder in the corresponding /data/ folder in the main codebase.
 3) Open run_all.py. Modify hyperparameters and select experiments as desired. Hyperparameters are as follows:
 	* run_name = 'Test_Run' # Name of experiment - Folder containing results will be named this.
